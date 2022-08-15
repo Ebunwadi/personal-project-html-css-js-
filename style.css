@@ -1,0 +1,232 @@
+/*universal styling*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*<header styling>*/
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+}
+
+/*move the list items to the left*/
+.shift{
+	margin-left: 400px;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/*media queries*/
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one. Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li:first-child {width: 90%;}
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  }
+
+/*</header styling>*/
+
+/*class center styling*/
+
+.bgd{
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 98vw;
+}
+
+center, h2 {
+  font-family: cursive;
+}
+
+hr {
+  width: 30vw;
+  color: green;
+}
+
+.first-section {
+  font-family: cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hidden {
+  /*opacity: 0.0;*/
+  display: none;
+}
+
+.reveal {
+  /*opacity: 1.0;*/
+  display: block;
+}
+
+.first-flex{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: auto;
+  border: 2px solid black;
+}
+
+.flexed{
+  margin: auto;
+  /*border: 2px solid green;*/
+}
+
+/*Todo List Style*/
+
+ol{
+  list-style: inside;
+}
+
+.flexed li {
+  margin: 10px;
+  padding: 10px;
+}
+.todoo {
+   margin-top: 10px;
+}
+/*calculator app styling*/
+
+table {
+  width: 30vw;
+  border-color: #f4f4f4;
+}
+
+.calc {
+  margin-top: 20px;
+}
+
+.flexed:nth-child(2) button {
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  background-color: white;
+}
+
+#inputLabel {
+  height: 90px;
+  font-size: 35px;
+  color: white;
+  text-align: right;
+  vertical-align: bottom;
+  padding-right: 16px;
+  background-color: black;
+}
+
+/*vowel counter app styling*/
+
+#Vowel_counter_name {
+  width: 100%;
+  /*height: auto;*/
+}
+
+.vowel{
+  margin-top: 10px;
+}
+
+#Vowel_counter {
+  width: 100%;
+  /*display: none;*/
+  /*opacity: 0.0;*/
+}
+
+/*converter styling*/
+#num {
+  width: 100%;
+  /*height: auto;*/
+}
+
+#numResult {
+  width: 100%;
+  /*height: auto;*/
+}
+
+.flexed:nth-child(1) button {
+  width: 45%;
+  height: 30px;
+  /*font-size: 20px;*/
+  background-color: white;
+}
+
+/*footer styling*/
+footer {
+  background: gold;
+  /*height: 10vh;
+  width: 98vw;*/
+  border: 1px solid green;
+  border-radius: 5px;
+  font-family: cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media screen and (max-width:680px) {
+  .first-flex {
+    flex-direction: column;
+  }
+  table {
+    width: 70vw;
+  }
+  hr {
+  width: 50vw;
+  color: green;
+}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App Combos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<ul class="topnav">
+			<li><a href="#"></a><img src="ebupp.jpg" width="10%"></li>
+			<li class="shift"><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li class="icon">
+			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</header>
+
+	<br>
+	<div class = 'center'>
+		<center>
+			<br>
+			<h2>This is me freestyling with Javascript. Let's see how this goes</h2>
+			<br>
+			<div class="bgd">
+				<h1 style="color: mediumvioletred;">Background Generator App</h1>
+				<hr>
+				<p>Click on these buttons to choose your best background color</p>
+				<input class="color1" type="color" value="#00ff00">
+				<input class="color2" type="color" value="#ff0000">
+				<h2>Current CSS Background:</h2>
+				<h3></h3>
+			</div>
+		</center>
+	</div>
+	<br>
+	<div class="first-section">
+		<p>well, the apps are hidden...(lol)</p>
+		<p>so click on the button to reveal/hide the contents</p>
+		<button onclick="revealMe()" class="func">Click to reveal</button>
+	</div>
+	<br>
+	<div class="hidden">
+		<div class="reveal first-flex">
+			<div class="flexed vowel">
+				<h2>Vowel Counter</h2>
+                <form id="myForm">
+                	<br>
+                    <input type="text" id="Vowel_counter_name" placeholder="Enter Name">
+    				<br>
+                    <!-- <h3 class="vow"></h3> -->
+                    <br>
+                    <input type="text" id="Vowel_counter" placeholder="your result shows here">
+                	<br><br>
+                    <button onclick="vowelCounter()">Count</button>
+                    <button onclick="resett()">Reset</button>
+                </form>
+
+                <br>
+                <h2>Roman Numeral Converter</h2>
+                <form id="myOtherForm">
+                	<br>
+                    <input type="number" id="num" placeholder="Enter Number">
+    				<br>
+                    <!-- <h3 class="vow"></h3> -->
+                    <br>
+                    <input type="text" id="numResult" placeholder="your result shows here">
+                	<br><br>
+                    <button onclick="converter()">Convert</button>
+                    <button onclick="reseter()">Reset</button>
+                </form>
+
+                <br>
+				<h2>Factorial Checker</h2>
+				<p>click below to check the factorial of any positive integer</p>
+				<br>
+				<h3 class="fac"></h3>
+				<button onclick="factorial()"> Check Factorial</button>
+			</div>
+			
+			<div class="flexed calc">
+				<center>
+					<h2>The Calculator App</h2>
+				</center>				
+				<table border="1" cellsapcing="0">
+			      <tr>
+			          <td colspan="4" id="inputLabel">0</td>
+			      </tr>
+
+			      <tr>
+			        <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
+			        <td><button onclick="pushBtn(this);">/</button></td>
+			      </tr>
+
+			      <tr>
+			        <td><button onclick="pushBtn(this);">8</button></td>
+			        <td><button onclick="pushBtn(this);">7</button></td>
+			        <td><button onclick="pushBtn(this);">9</button></td>
+			        <td><button onclick="pushBtn(this);">*</button></td>
+			      </tr>
+
+			      <tr>
+			        <td><button onclick="pushBtn(this);">4</button></td>
+			        <td><button onclick="pushBtn(this);">5</button></td>
+			        <td><button onclick="pushBtn(this);">6</button></td>
+			        <td><button onclick="pushBtn(this);">-</button></td>
+			      </tr>
+
+			      <tr>
+			        <td><button onclick="pushBtn(this);">1</button></td>
+			        <td><button onclick="pushBtn(this);">2</button></td>
+			        <td><button onclick="pushBtn(this);">3</button></td>
+			        <td><button onclick="pushBtn(this);">+</button></td>
+			      </tr>
+
+
+			      <tr>
+			        <td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+			        <td><button onclick="pushBtn(this);">.</button></td>
+			        <td><button onclick="pushBtn(this);">=</button></td>
+			      </tr>
+ 				</table>
+			</div>
+			<div class="flexed todoo">
+				<h2>The Todo List App</h2>
+				<br>
+				<input class="todo" type="text" placeholder="Things to do">
+				<button class="todos">Add Activity</button>
+				<!-- <button onclick="cleared()">Clear Activity</button> -->
+				<ol id="clearMe">
+					<li>pray</li>
+					<li>eat</li>
+				</ol>
+			</div>
+		</div>
+
+		<footer>
+			<p>so this is it for now, as time goes on i will update the apps on this webpage and when i do, you will be the first to know.</p>
+		</footer>
+
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
