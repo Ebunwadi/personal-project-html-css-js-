@@ -125,7 +125,6 @@ hr {
 
 .flexed{
   margin: auto;
-  /*border: 2px solid green;*/
 }
 
 /*Todo List Style*/
@@ -142,6 +141,7 @@ ol{
 .todoo {
    margin-top: 10px;
 }
+
 /*calculator app styling*/
 
 table {
@@ -183,8 +183,6 @@ table {
 
 #Vowel_counter {
   width: 100%;
-  /*display: none;*/
-  /*opacity: 0.0;*/
 }
 
 /*converter styling*/
@@ -217,6 +215,7 @@ footer {
   margin-top: 10px;
 }
 
+/* media queries */
 @media screen and (max-width:680px) {
   .first-flex {
     flex-direction: column;
