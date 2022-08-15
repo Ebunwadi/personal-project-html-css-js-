@@ -58,9 +58,13 @@ function addListAfterClick() {
 }
 button.addEventListener("click", addListAfterClick)
 
-// let cleared = function() {
-//     document.getElementById('clearMe').;
-// }
+let cleared = function() {
+    let clear = document.getElementById('clearMe');
+    // if (clear.hasChildNodes()){
+    //     clear.removeChild(clear)
+    // }
+    clear.removeChild(clear.lastElementChild);
+}
 
 // calculator app scripting
 let inputLabel = document.querySelector('#inputLabel');
@@ -103,9 +107,11 @@ let result = document.querySelector("#Vowel_counter");
 }
 
 let resett = function() {
-    document.getElementById('myForm').reset();
+    document.getElementById('Vowel_counter_name').value='';
+    document.getElementById('Vowel_counter').value='';
 }
 
+// roman numeral scripting
 const converter = () => {
   const map = {
     M: 1000,
@@ -152,9 +158,9 @@ const converter = () => {
   // console.log(result)
 };
 
-
-  let reseter = function() {
-    document.getElementById('myOtherForm').reset();
+let reseter = function() {
+    document.getElementById('num').value='';
+    document.getElementById('numResult').value='';
 }
 
 // factorial app scripting
@@ -187,4 +193,7 @@ else {
     // console.log(`The factorial of ${number} is ${fact}.`);
     text.textContent = `The factorial of ${number} is ${fact}.`
 }
+}
+let resetter = function() {
+    document.querySelector('.fac').textContent = '';
 }

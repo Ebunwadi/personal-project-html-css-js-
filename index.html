@@ -44,11 +44,12 @@
 		<button onclick="revealMe()" class="func">Click to reveal</button>
 	</div>
 	<br>
+	<center>
 	<div class="hidden">
 		<div class="reveal first-flex">
 			<div class="flexed vowel">
 				<h2>Vowel Counter</h2>
-                <form id="myForm">
+                <div id="myForm">
                 	<br>
                     <input type="text" id="Vowel_counter_name" placeholder="Enter Name">
     				<br>
@@ -58,11 +59,11 @@
                 	<br><br>
                     <button onclick="vowelCounter()">Count</button>
                     <button onclick="resett()">Reset</button>
-                </form>
+				</div>
 
                 <br>
                 <h2>Roman Numeral Converter</h2>
-                <form id="myOtherForm">
+                <div id="myOtherForm">
                 	<br>
                     <input type="number" id="num" placeholder="Enter Number">
     				<br>
@@ -72,14 +73,7 @@
                 	<br><br>
                     <button onclick="converter()">Convert</button>
                     <button onclick="reseter()">Reset</button>
-                </form>
-
-                <br>
-				<h2>Factorial Checker</h2>
-				<p>click below to check the factorial of any positive integer</p>
-				<br>
-				<h3 class="fac"></h3>
-				<button onclick="factorial()"> Check Factorial</button>
+				</div>		
 			</div>
 			
 			<div class="flexed calc">
@@ -126,23 +120,33 @@
  				</table>
 			</div>
 			<div class="flexed todoo">
+				<div id="myFactorial">
+					<h2>Factorial Checker</h2>
+					<p>click below to check the factorial of any positive integer</p>
+					<br>
+					<h3 class="fac"></h3>
+					<button onclick="factorial()"> Check Factorial</button>
+					<button onclick="resetter()">Reset</button>
+				</div>
+			
+				<br>
 				<h2>The Todo List App</h2>
 				<br>
 				<input class="todo" type="text" placeholder="Things to do">
 				<button class="todos">Add Activity</button>
-				<!-- <button onclick="cleared()">Clear Activity</button> -->
+				<button onclick="cleared()">Clear Activity</button>
 				<ol id="clearMe">
 					<li>pray</li>
 					<li>eat</li>
 				</ol>
 			</div>
 		</div>
-
 		<footer>
 			<p>so this is it for now, as time goes on i will update the apps on this webpage and when i do, you will be the first to know.</p>
 		</footer>
 
 	</div>
+	</center>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

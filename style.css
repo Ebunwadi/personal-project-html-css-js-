@@ -19,12 +19,14 @@ ul.topnav {
 /* Float the list items side by side */
 ul.topnav li {
 	float: left;
+  margin-top: 10px;
 }
 
 /*move the list items to the left*/
 .shift{
 	margin-left: 400px;
 }
+
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -48,10 +50,12 @@ ul.topnav li.icon {display: none;}
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one. Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li:first-child {width: 90%;}
-
+  ul.topnav li:first-child {
+    width: 80%;
+    margin-top: 10px;
+  }
   ul.topnav li.icon {
-    float: right;
+    margin-left: auto;
     display: inline-block;
   }
 }
@@ -115,6 +119,8 @@ hr {
   margin: auto;
   padding: auto;
   border: 2px solid black;
+  width: 98vw;
+  border-radius: 5px;
 }
 
 .flexed{
@@ -129,9 +135,10 @@ ol{
 }
 
 .flexed li {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
+
 .todoo {
    margin-top: 10px;
 }
@@ -201,28 +208,47 @@ table {
 /*footer styling*/
 footer {
   background: gold;
-  /*height: 10vh;
-  width: 98vw;*/
+  width: 98vw;
   border: 1px solid green;
   border-radius: 5px;
   font-family: cursive;
   font-weight: bolder;
   text-align: center;
+  margin-top: 10px;
 }
 
 @media screen and (max-width:680px) {
   .first-flex {
     flex-direction: column;
+/* width: 98vw; */
+
   }
   table {
     width: 70vw;
   }
   hr {
-  width: 50vw;
+  width: 70vw;
   color: green;
 }
+center, h2 {
+  font-family: 'Times New Roman', Times, serif;
 }
-
+.first-section {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  text-align: center;
+}
+footer {
+  background: gold;
+border: 1px solid green;
+border-radius: 5px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+text-align: center;
+width: 98vw;
+margin-top: 10px;
+}
+}
 
 
 
