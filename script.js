@@ -60,9 +60,6 @@ button.addEventListener("click", addListAfterClick)
 
 let cleared = function() {
     let clear = document.getElementById('clearMe');
-    // if (clear.hasChildNodes()){
-    //     clear.removeChild(clear)
-    // }
     clear.removeChild(clear.lastElementChild);
 }
 
